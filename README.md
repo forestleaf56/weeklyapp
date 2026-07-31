@@ -5,4 +5,5 @@ week and the finished result is published here every Friday, overwriting the
 previous one. Just open `index.html` in a browser (best on a phone). See
 `readme.txt` for the current app's guide.
 
-Current app: **Orbit Weaver** — a one-thumb neon space arcade game.
+Current app: **Untangle** — a minimalist planarity puzzle: drag the glowing nodes
+until no connecting lines cross.
