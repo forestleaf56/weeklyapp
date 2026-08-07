@@ -1,15 +1,16 @@
 ======================================================================
-  UNTANGLE  —  a minimalist planarity puzzle
-  Weekly App · week of 2026-07-27
+  SKYLINE  —  a one-tap tower-stacking arcade game
+  Weekly App · week of 2026-08-03
 ======================================================================
 
 WHAT IT IS
 ----------
-Untangle is a calm, one-finger puzzle game. The screen shows a web of
-glowing nodes connected by lines — and the lines cross each other in a
-tangled mess. Your job: drag the nodes around until NO two lines cross.
-Clear the web and a new, harder one appears. Every puzzle is guaranteed
-solvable.
+Skyline is a one-tap arcade game about building the tallest neon city you
+can. A glowing building slab slides back and forth across the top of the
+screen; tap to drop it onto the tower. Any part that hangs past the slab
+beneath gets sliced off and tumbles away — so each floor is only as wide
+as your timing is good. The camera rises with your tower as a lit skyline
+grows beneath you. Miss completely and it all topples.
 
 It's a single self-contained HTML file. No install, no account, no
 internet connection required after loading.
@@ -17,36 +18,38 @@ internet connection required after loading.
 
 HOW TO PLAY
 -----------
-1. Open the game (see "RUN IT" below) and tap TAP TO PLAY.
-2. You'll see amber nodes joined by lines. Lines that currently cross
-   another line are shown in RED; lines that are clear are VIOLET.
-3. DRAG any node (touch or mouse) to move it.
-4. Rearrange the nodes until every line is violet — i.e. zero crossings.
-5. When the web is fully untangled it flashes green ("UNTANGLED!") and the
-   next, larger level begins.
+1. Open the game (see "RUN IT" below) and tap PLAY on the title screen.
+   (HOW TO PLAY on the title screen also shows a quick refresher.)
+2. A slab slides left-right at the top. TAP ANYWHERE to drop it onto the
+   floor below.
+3. Line it up: any overhang is sliced off and falls, making the next slab
+   that much narrower — so precise drops keep your tower wide.
+4. PERFECT DROP: line the slab up almost exactly with the floor below and
+   it keeps its full width, rings out a chime, and builds your COMBO for
+   bonus points.
+5. Keep stacking. A full miss (no overlap) topples the tower — game over.
 
 GOAL
 ----
-- Reduce the crossing count (shown top-right) to zero on each level.
-- Get as far as you can — each level adds more nodes and lines.
-- Your best level reached is saved on your device.
+- Build as HIGH as you can (the big number is your height).
+- Score climbs with every floor, and perfect-drop combos multiply it.
+- Your best height and best score are saved on your device.
 
 CONTROLS
 --------
-- Touch: drag a node with your finger.
-- Desktop: click and drag a node with the mouse.
-That's it — one gesture.
+- Touch: tap anywhere to drop.
+- Desktop: click anywhere to drop.
+One tap — that's the whole game.
 
 FEATURES
 --------
-- One-finger, mobile-first play (portrait, full screen).
-- Procedurally generated levels using a line-arrangement method, so every
-  level is always solvable and you never run out of puzzles.
-- Live crossing detection: crossing lines highlight red in real time.
-- Level counter, move counter, and a saved "best level" (localStorage).
-- Solve animation with a green pulse + rising chord, plus sound and haptic
-  vibration on supported phones.
-- Warm amber-on-dark neon look.
+- One-tap, mobile-first play (portrait, full screen).
+- Overhang slicing with tumbling off-cuts and a rising camera.
+- Perfect-drop detection with a combo multiplier and ring flash.
+- Neon cyan-to-magenta floors with lit windows; night-city title screen.
+- Title screen + menu (PLAY / HOW TO PLAY), best height/score readout.
+- Sound effects (WebAudio) and haptic vibration on supported phones.
+- Collapse animation on game over; best height + score saved (localStorage).
 
 
 RUN IT
@@ -73,5 +76,5 @@ TECH / DEPLOY NOTES
 - Because there is no backend, no special Vercel setup is required — if you
   host it, it's just a static file.
 
-Untangle the web. Beat your best level. :)
+Stack it high. Beat your best skyline. :)
 ======================================================================
