@@ -1,73 +1,74 @@
-======================================================================
-  FIVES  —  a five-letter word guessing game
-  Weekly App · week of 2026-08-17
-======================================================================
+FATHOM — a pocket ocean
+Week of 2026-08-28
 
+================================================================
 WHAT IT IS
-----------
-Fives is a word game. There's a hidden five-letter word, and you have six
-tries to guess it. After each guess, the letters are colored to tell you
-how close you are — so every guess narrows it down. Find the word to win;
-your streak and win-rate are tracked. A fresh random word each game.
+================================================================
+Fathom is a cozy pocket aquarium — an ambient simulation / idle game.
+You keep a small living tank of procedurally-drawn fish that drift and
+school with gentle flocking behaviour. Tap the water to sprinkle food;
+fish dart to it and earn you "pearls". Pearls also trickle in over time.
+Spend them in the shop to unlock new fish species and décor. A slow
+day-to-night cycle changes the light and brings glowing species to life
+after dark. Everything is drawn in code — no images, no downloads, no
+accounts.
 
-It's a single self-contained HTML file. No install, no account, no
-internet connection required after loading.
+================================================================
+HOW TO RUN
+================================================================
+Just open index.html in any modern browser (desktop or mobile). It is a
+single self-contained file — no server, no build step, no install.
+- On a phone: open the file (or host it anywhere static) and add to home
+  screen for a full-screen feel.
+- Nothing to configure. No API keys, no environment variables, no backend.
 
-
+================================================================
 HOW TO PLAY
------------
-1. Open it (see "RUN IT" below) and tap PLAY.
-2. Type any five-letter word and press ENTER.
-3. The tiles flip to reveal colors:
-     GREEN  — right letter, right spot.
-     AMBER  — that letter is in the word, but a different spot.
-     SLATE  — that letter is not in the word at all.
-   The on-screen keyboard colors its keys the same way, so you can see
-   which letters you've ruled in or out.
-4. Use the clues to make your next guess. Solve it within six rows to win.
-   If you run out of guesses, the answer is revealed.
+================================================================
+1. TITLE SCREEN — press PLAY to dive in. HOW TO and COLLECTION are also
+   reachable from here.
+2. FEED — tap/click anywhere in the water. Food pellets sink; nearby fish
+   swim over and eat them. Each bite gives you +2 pearls and a happy pop.
+3. EARN — pearls also accrue slowly on their own; a bigger, busier tank
+   earns a little faster.
+4. SHOP — open the ☰ menu, then SHOP. Buy any of 7 fish species and 4
+   décor pieces. The Buy button greys out when you can't afford it.
+5. COLLECTION — see every species, how many you own, and which are still
+   locked (dimmed).
+6. DAY / NIGHT — the tank slowly cycles (~90s). After dark the god-rays
+   fade and bioluminescent species (neon tetra, lanternfish) start to
+   glow. Watch the ☀ / 🌙 indicator in the top bar.
+7. SOUND — a soft ambient drone plays with gentle blips when you feed,
+   when fish eat, and when you buy. Toggle it with the 🔈 / 🔇 button in
+   the top bar.
 
-CONTROLS
---------
-- On-screen keyboard: tap letters, ENTER to submit, ⌫ to delete.
-- Physical keyboard also works (great on a laptop).
-- Header buttons: "?" opens How to Play, the grid icon opens Stats.
-
+================================================================
 FEATURES
---------
-- Mobile-first word game with a tap keyboard (portrait, full screen).
-- Correct duplicate-letter coloring (the tricky part of these games).
-- Tile-flip reveal animation, sound effects, and haptic feedback.
-- Title screen + menu (Play / How to Play / Stats).
-- Stats saved on your device: games played, win %, current & max streak,
-  and a guess-distribution chart.
-- Any five-letter guess is accepted; answers come from a curated word list.
+================================================================
+- Live animated underwater title screen (depth gradient, drifting
+  god-rays, rising bubbles, silhouette fish) with a serif FATHOM wordmark
+  and styled gold/teal buttons.
+- Procedural fish that wander, seek food, school (cohesion / alignment /
+  separation) and avoid the tank edges, each facing its heading.
+- 7 species (Guppy, Neon Tetra, Ember, Sunny, Angelfish, Koi, Lumen) and
+  4 décor pieces (kelp, rock, coral, shipwreck).
+- Tap-to-feed with sinking pellets, feeding ripples, and a pearl economy.
+- A shop with per-item pricing and affordability, plus a Collection
+  catalogue.
+- A ~90-second day/night cycle with bioluminescence at night.
+- Ambient WebAudio (drone pad + feed/eat/buy blips) with a mute toggle.
+- Everything (pearls, fish owned, décor, sound setting) saves
+  automatically to your browser's localStorage — close and come back and
+  your tank is exactly as you left it.
 
+================================================================
+TECH
+================================================================
+- Single self-contained index.html: HTML + CSS + JavaScript + Canvas 2D.
+- No backend, no Supabase, no Gemini API — so NO API keys, NO env vars,
+  and NO api/ folder / Vercel serverless setup are needed.
+- Mobile-first, full-viewport responsive canvas, touch to feed, no page
+  scrolling.
+- Saves to localStorage under the keys 'fathom_save' and 'fathom_sound'.
 
-RUN IT
-------
-Option A - on your phone or computer, no tools:
-  Just open index.html in any modern browser (Chrome, Safari, Firefox,
-  Edge). Double-click it, or drag it into a browser tab. Tap once to allow
-  sound if your browser asks.
-
-Option B - add it to your phone home screen (feels like an app):
-  Open index.html in your mobile browser, then use the browser's
-  "Add to Home Screen" option. It runs full-screen and offline.
-
-Option C - host it online (optional):
-  Upload index.html to any static host (GitHub Pages, Netlify, Vercel,
-  or any web server) and open the URL.
-
-
-TECH / DEPLOY NOTES
--------------------
-- 100% client-side: a single index.html with inline CSS and JavaScript.
-  Sound uses the Web Audio API; stats use localStorage.
-- It does NOT use Supabase or the Gemini API, so there are NO API keys,
-  NO environment variables, and NO server / api folder to configure.
-- Because there is no backend, no special Vercel setup is required — if you
-  host it, it's just a static file.
-
-Guess the word. Keep your streak alive. :)
-======================================================================
+Enjoy your pocket ocean.

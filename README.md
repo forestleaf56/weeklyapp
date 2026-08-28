@@ -5,5 +5,6 @@ week and the finished result is published here every Friday, overwriting the
 previous one. Just open `index.html` in a browser (best on a phone). See
 `readme.txt` for the current app's guide.
 
-Current app: **Fives** — a five-letter word guessing game: six tries, green/amber/
-slate clues, on-screen keyboard, and saved stats.
+Current app: **Fathom** — a cozy pocket aquarium: tap to feed procedural,
+schooling fish for pearls, buy 7 species & 4 décor in the shop, and watch a
+day/night cycle bring glowing fish to life. Ambient sound; saves automatically.
